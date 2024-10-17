@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .quiz-container {
+            background-color: white;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .dropdown {
+            margin-top: 10px;
+        }
+        .explanation {
+            display: none;
+            margin-top: 10px;
+            background-color: #e7f3fe;
+            padding: 10px;
+            border-left: 4px solid #2196f3;
+        }
+        .explanation h4 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h2>Java OOP Quiz: Exclusively for Your Placement Online Assessments and Interviews</h2>
+    
+    <!-- Question 1 -->
+    <div class="question">
+        <p>Q1. Which of the following is NOT a pillar of Object-Oriented Programming (OOP) in Java?</p>
+        <div class="options">
+            <label><input type="radio" name="q1" value="a"> a) Inheritance</label>
+            <label><input type="radio" name="q1" value="b"> b) Encapsulation</label>
+            <label><input type="radio" name="q1" value="c"> c) Polymorphism</label>
+            <label><input type="radio" name="q1" value="d"> d) Compilation</label>
+        </div>
+        <div class="dropdown">
+            <button onclick="toggleExplanation('explanation1')">Show Explanation</button>
+        </div>
+        <div class="explanation" id="explanation1">
+            <h4>Answer: d) Compilation</h4>
+            <p>OOP is based on four main pillars: Inheritance, Encapsulation, Polymorphism, and Abstraction. Compilation is not a concept of OOP but rather a process of converting code into machine-readable format.</p>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <p>Q2. In Java, what is the purpose of the <code>super</code> keyword?</p>
+        <div class="options">
+            <label><input type="radio" name="q2" value="a"> a) It refers to the current class instance.</label>
+            <label><input type="radio" name="q2" value="b"> b) It is used to invoke the superclass constructor or methods.</label>
+            <label><input type="radio" name="q2" value="c"> c) It is used to create a new instance of a class.</label>
+            <label><input type="radio" name="q2" value="d"> d) It is used to inherit a class.</label>
+        </div>
+        <div class="dropdown">
+            <button onclick="toggleExplanation('explanation2')">Show Explanation</button>
+        </div>
+        <div class="explanation" id="explanation2">
+            <h4>Answer: b) It is used to invoke the superclass constructor or methods.</h4>
+            <p>The <code>super</code> keyword in Java is used to refer to the immediate parent class object. It is commonly used to call superclass methods or constructors when you need to override them or initialize a subclass with a specific constructor from the parent class.</p>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+        <p>Q3. Which of the following best describes polymorphism in Java?</p>
+        <div class="options">
+            <label><input type="radio" name="q3" value="a"> a) Using different names for the same method.</label>
+            <label><input type="radio" name="q3" value="b"> b) Defining multiple methods with the same name but different signatures.</label>
+            <label><input type="radio" name="q3" value="c"> c) Hiding the internal details of a class.</label>
+            <label><input type="radio" name="q3" value="d"> d) Deriving a class from another class.</label>
+        </div>
+        <div class="dropdown">
+            <button onclick="toggleExplanation('explanation3')">Show Explanation</button>
+        </div>
+        <div class="explanation" id="explanation3">
+            <h4>Answer: b) Defining multiple methods with the same name but different signatures.</h4>
+            <p>Polymorphism allows one interface to be used for a general class of actions. In Java, method overloading (compile-time polymorphism) and method overriding (run-time polymorphism) are examples. This means multiple methods can have the same name but differ by parameters (overloading) or behavior (overriding).</p>
+        </div>
+    </div>
+    <!-- Question 4 -->
+<div class="question">
+    <p>Q4. Which one of the following are essential features of an object-oriented programming language?</p>
+    <div class="options">
+        <label><input type="radio" name="q4" value="a"> a) Abstraction and encapsulation</label>
+        <label><input type="radio" name="q4" value="b"> b) Abstraction and inheritance</label>
+        <label><input type="radio" name="q4" value="c"> c) Abstraction, encapsulation, and polymorphism</label>
+        <label><input type="radio" name="q4" value="d"> d) Abstraction, encapsulation, inheritance, and polymorphism</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation4')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation4">
+        <h4>Answer: d) Abstraction, encapsulation, inheritance, and polymorphism</h4>
+        <p>The four essential features of an object-oriented programming language are abstraction, encapsulation, inheritance, and polymorphism. These concepts help in code modularity, reusability, and the efficient organization of large software systems.</p>
+    </div>
+</div>
+<!-- Question 5 -->
+<div class="question">
+    <p>Q5. Which of the following languages supports polymorphism but not classes?</p>
+    <div class="options">
+        <label><input type="radio" name="q5" value="a"> a) Java</label>
+        <label><input type="radio" name="q5" value="b"> b) C++</label>
+        <label><input type="radio" name="q5" value="c"> c) Ada</label>
+        <label><input type="radio" name="q5" value="d"> d) Python</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation5')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation5">
+        <h4>Answer: c) Ada</h4>
+        <p>Ada supports polymorphism through its tagged types and subprogram dispatching but does not follow a typical class-based object-oriented approach as seen in Java or C++.</p>
+    </div>
+</div>
+<!-- Question 6 -->
+<div class="question">
+    <p>Q6. Which feature of OOP indicates code reusability?</p>
+    <div class="options">
+        <label><input type="radio" name="q6" value="a"> a) Abstraction</label>
+        <label><input type="radio" name="q6" value="b"> b) Polymorphism</label>
+        <label><input type="radio" name="q6" value="c"> c) Encapsulation</label>
+        <label><input type="radio" name="q6" value="d"> d) Inheritance</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation6')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation6">
+        <h4>Answer: d) Inheritance</h4>
+        <p>Inheritance allows a class to inherit properties and methods from another class, which encourages code reusability. This is a core principle of OOP that helps in reducing code duplication and improving maintainability.</p>
+    </div>
+</div>
+<!-- Question 7 -->
+<div class="question">
+    <p>Q7. Which of the following is associated with objects in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q7" value="a"> a) State</label>
+        <label><input type="radio" name="q7" value="b"> b) Behavior</label>
+        <label><input type="radio" name="q7" value="c"> c) Identity</label>
+        <label><input type="radio" name="q7" value="d"> d) All of the above</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation7')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation7">
+        <h4>Answer: d) All of the above</h4>
+        <p>In Java, objects are characterized by their state (attributes), behavior (methods), and identity (unique reference or address). These three aspects define an object and its interaction within the program.</p>
+    </div>
+</div>
+<!-- Question 8 -->
+<div class="question">
+    <p>Q8. Why is Java not considered a purely Object-Oriented language?</p>
+    <div class="options">
+        <label><input type="radio" name="q8" value="a"> a) Java uses the <code>static</code> keyword.</label>
+        <label><input type="radio" name="q8" value="b"> b) Java supports primitive data types like <code>int</code>, <code>char</code>, and <code>boolean</code>.</label>
+        <label><input type="radio" name="q8" value="c"> c) Java uses wrapper classes for primitive types.</label>
+        <label><input type="radio" name="q8" value="d"> d) All of the above.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation8')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation8">
+        <h4>Answer: d) All of the above</h4>
+        <p>Java is not purely object-oriented because it supports primitive data types, uses the <code>static</code> keyword, and involves wrapper classes that convert primitives to objects (autoboxing and unboxing). These factors prevent Java from being fully object-oriented, unlike languages such as Smalltalk.</p>
+    </div>
+</div>
+
+<!-- Question 9 -->
+<div class="question">
+    <p>Q9. Why is Java not considered a purely Object-Oriented language despite having Wrapper Classes?</p>
+    <div class="options">
+        <label><input type="radio" name="q9" value="a"> a) Wrapper classes are not objects themselves.</label>
+        <label><input type="radio" name="q9" value="b"> b) Wrapper classes internally use primitive data types during operations.</label>
+        <label><input type="radio" name="q9" value="c"> c) Wrapper classes don’t support inheritance.</label>
+        <label><input type="radio" name="q9" value="d"> d) Wrapper classes prevent the use of encapsulation.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation9')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation9">
+        <h4>Answer: b) Wrapper classes internally use primitive data types during operations.</h4>
+        <p>Even though Java uses wrapper classes to represent primitive data types as objects, during operations like arithmetic, Java still internally uses primitive types. This violates the pure object-oriented principle where all operations must be performed through objects.</p>
+    </div>
+</div>
+
+<!-- Question 10 -->
+<div class="question">
+    <p>Q10. What is the primary purpose of a class in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q10" value="a"> a) To define a set of methods only.</label>
+        <label><input type="radio" name="q10" value="b"> b) To represent a blueprint or prototype for creating objects.</label>
+        <label><input type="radio" name="q10" value="c"> c) To store only primitive data types.</label>
+        <label><input type="radio" name="q10" value="d"> d) To create static variables only.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation10')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation10">
+        <h4>Answer: b) To represent a blueprint or prototype for creating objects.</h4>
+        <p>A class in Java serves as a blueprint from which objects are created, encapsulating both data members and methods that define the behavior of the objects.</p>
+    </div>
+</div>
+
+<!-- Question 11 -->
+<div class="question">
+    <p>Q11. Which of the following components can be included in a class declaration in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q11" value="a"> a) Data members</label>
+        <label><input type="radio" name="q11" value="b"> b) Methods</label>
+        <label><input type="radio" name="q11" value="c"> c) Constructors</label>
+        <label><input type="radio" name="q11" value="d"> d) All of the above</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation11')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation11">
+        <h4>Answer: d) All of the above</h4>
+        <p>A class in Java can include data members, methods, constructors, and even nested classes and interfaces, making it a versatile structure for modeling real-world entities.</p>
+    </div>
+</div>
+
+<!-- Question 12 -->
+<div class="question">
+    <p>Q12. In the context of classes in Java, what is a constructor?</p>
+    <div class="options">
+        <label><input type="radio" name="q12" value="a"> a) A method to destroy an object.</label>
+        <label><input type="radio" name="q12" value="b"> b) A special method used to initialize objects.</label>
+        <label><input type="radio" name="q12" value="c"> c) A variable that holds data.</label>
+        <label><input type="radio" name="q12" value="d"> d) A method that creates a new class.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation12')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation12">
+        <h4>Answer: b) A special method used to initialize objects.</h4>
+        <p>A constructor is a special method in Java that is called when an object is instantiated, allowing the object to be initialized with specific values.</p>
+    </div>
+</div>
+
+<!-- Question 13 -->
+<div class="question">
+    <p>Q13. What does the keyword <code>this</code> refer to in a constructor in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q13" value="a"> a) It refers to the class itself.</label>
+        <label><input type="radio" name="q13" value="b"> b) It refers to the parent class.</label>
+        <label><input type="radio" name="q13" value="c"> c) It refers to the current object being created.</label>
+        <label><input type="radio" name="q13" value="d"> d) It refers to the static variables of the class.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation13')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation13">
+        <h4>Answer: c) It refers to the current object being created.</h4>
+        <p>In a constructor, <code>this</code> is a reference to the current object, allowing access to its attributes and methods.</p>
+    </div>
+</div>
+
+<!-- Question 14 -->
+<div class="question">
+    <p>Q14. What will be the output of the following code segment?</p>
+    <pre><code>Dog tuffy = new Dog("tuffy", "papillon", 5, "white"); System.out.println(tuffy.toString());</code></pre>
+    <div class="options">
+        <label><input type="radio" name="q14" value="a"> a) Hi my name is tuffy. My breed, age and color are papillon, 5, white.</label>
+        <label><input type="radio" name="q14" value="b"> b) null</label>
+        <label><input type="radio" name="q14" value="c"> c) Error: No suitable constructor found.</label>
+        <label><input type="radio" name="q14" value="d"> d) Compilation error.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation14')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation14">
+        <h4>Answer: a) Hi my name is tuffy. My breed, age and color are papillon, 5, white.</h4>
+        <p>The output will display the string representation defined in the <code>toString()</code> method of the <code>Dog</code> class, showing the dog's name, breed, age, and color.</p>
+    </div>
+</div>
+
+<!-- Question 15 -->
+<div class="question">
+    <p>Q15. Which of the following statements is true regarding objects in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q15" value="a"> a) Objects are instances of classes.</label>
+        <label><input type="radio" name="q15" value="b"> b) Objects can only hold primitive data types.</label>
+        <label><input type="radio" name="q15" value="c"> c) Objects cannot be modified after creation.</label>
+        <label><input type="radio" name="q15" value="d"> d) Objects are used only for data storage.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation15')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation15">
+        <h4>Answer: a) Objects are instances of classes.</h4>
+        <p>In Java, an object is an instance of a class, representing an entity that has state (attributes) and behavior (methods).</p>
+    </div>
+</div>
+
+<div class="question">
+    <p>Q21. What is the primary purpose of abstraction in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q21" value="a"> a) To hide implementation details and show only essential features</label>
+        <label><input type="radio" name="q21" value="b"> b) To create multiple instances of a class</label>
+        <label><input type="radio" name="q21" value="c"> c) To ensure that classes can inherit from multiple classes</label>
+        <label><input type="radio" name="q21" value="d"> d) To increase the complexity of the code</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation21')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation21">
+        <h4>Answer: a) To hide implementation details and show only essential features</h4>
+        <p>The primary purpose of abstraction is to simplify the interaction with objects by hiding complex implementation details and exposing only the essential features.</p>
+    </div>
+</div>
+
+<!-- Question 22 -->
+<div class="question">
+    <p>Q22. Which of the following statements about abstract classes in Java is true?</p>
+    <div class="options">
+        <label><input type="radio" name="q22" value="a"> a) An abstract class can be instantiated directly.</label>
+        <label><input type="radio" name="q22" value="b"> b) An abstract class cannot have concrete methods.</label>
+        <label><input type="radio" name="q22" value="c"> c) An abstract class can contain both abstract and concrete methods.</label>
+        <label><input type="radio" name="q22" value="d"> d) All methods in an abstract class must be abstract.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation22')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation22">
+        <h4>Answer: c) An abstract class can contain both abstract and concrete methods.</h4>
+        <p>An abstract class can contain both abstract methods (which have no implementation) and concrete methods (which do).</p>
+    </div>
+</div>
+
+<!-- Question 23 -->
+<div class="question">
+    <p>Q23. What happens if a subclass does not implement an abstract method from its superclass?</p>
+    <div class="options">
+        <label><input type="radio" name="q23" value="a"> a) The program will compile without errors.</label>
+        <label><input type="radio" name="q23" value="b"> b) The subclass will become abstract.</label>
+        <label><input type="radio" name="q23" value="c"> c) The program will throw a runtime exception.</label>
+        <label><input type="radio" name="q23" value="d"> d) The subclass will have a default implementation of the method.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation23')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation23">
+        <h4>Answer: b) The subclass will become abstract.</h4>
+        <p>If a subclass does not implement an abstract method, it must be declared abstract itself, preventing instantiation.</p>
+    </div>
+</div>
+
+<!-- Question 24 -->
+<div class="question">
+    <p>Q24. In the context of abstraction, what is an interface in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q24" value="a"> a) A class that provides a default implementation of methods</label>
+        <label><input type="radio" name="q24" value="b"> b) A blueprint for classes that can contain only abstract methods and constants</label>
+        <label><input type="radio" name="q24" value="c"> c) A class that cannot be instantiated</label>
+        <label><input type="radio" name="q24" value="d"> d) A class that can extend multiple classes</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation24')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation24">
+        <h4>Answer: b) A blueprint for classes that can contain only abstract methods and constants.</h4>
+        <p>An interface serves as a blueprint that defines a set of methods that implementing classes must provide, without any implementation details.</p>
+    </div>
+</div>
+
+<!-- Question 25 -->
+<div class="question">
+    <p>Q25. Which keyword is used to declare an abstract class in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q25" value="a"> a) interface</label>
+        <label><input type="radio" name="q25" value="b"> b) abstract</label>
+        <label><input type="radio" name="q25" value="c"> c) class</label>
+        <label><input type="radio" name="q25" value="d"> d) void</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation25')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation25">
+        <h4>Answer: b) abstract.</h4>
+        <p>The keyword <code>abstract</code> is used to declare a class as abstract in Java.</p>
+    </div>
+</div>
+
+<!-- Question 26 -->
+<div class="question">
+    <p>Q26. How does abstraction promote code reusability in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q26" value="a"> a) By allowing multiple inheritance</label>
+        <label><input type="radio" name="q26" value="b"> b) By defining common behavior in abstract classes and interfaces</label>
+        <label><input type="radio" name="q26" value="c"> c) By preventing the use of concrete classes</label>
+        <label><input type="radio" name="q26" value="d"> d) By hiding all methods from subclasses</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation26')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation26">
+        <h4>Answer: b) By defining common behavior in abstract classes and interfaces.</h4>
+        <p>Abstraction allows developers to define common behaviors in abstract classes and interfaces, which can be reused by multiple concrete classes.</p>
+    </div>
+</div>
+
+<!-- Question 27 -->
+<div class="question">
+    <p>Q27. Which of the following best describes a real-life analogy of abstraction?</p>
+    <div class="options">
+        <label><input type="radio" name="q27" value="a"> a) A person cooking a meal and knowing all the ingredients</label>
+        <label><input type="radio" name="q27" value="b"> b) A car driver using pedals without knowing the mechanics</label>
+        <label><input type="radio" name="q27" value="c"> c) A teacher explaining a concept in detail</label>
+        <label><input type="radio" name="q27" value="d"> d) A software engineer writing code without using libraries</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation27')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation27">
+        <h4>Answer: b) A car driver using pedals without knowing the mechanics.</h4>
+        <p>Just as a driver uses the pedals to operate the car without needing to know how the mechanics work, abstraction allows users to interact with an object without understanding its complexities.</p>
+    </div>
+</div>
+
+<!-- Question 28 -->
+<div class="question">
+    <p>Q28. What is the relationship between abstraction and polymorphism in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q28" value="a"> a) Abstraction and polymorphism are unrelated concepts.</label>
+        <label><input type="radio" name="q28" value="b"> b) Abstraction allows the use of polymorphism by defining general classes.</label>
+        <label><input type="radio" name="q28" value="c"> c) Polymorphism is a type of abstraction.</label>
+        <label><input type="radio" name="q28" value="d"> d) Polymorphism hides the implementation details of abstraction.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation28')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation28">
+        <h4>Answer: b) Abstraction allows the use of polymorphism by defining general classes.</h4>
+        <p>Abstraction provides a way to define general classes, which can then be used in polymorphism to interact with different implementations.</p>
+    </div>
+</div>
+
+<!-- Question 29 -->
+<div class="question">
+    <p>Q29. When should you use an abstract class instead of an interface?</p>
+    <div class="options">
+        <label><input type="radio" name="q29" value="a"> a) When you need to implement multiple inheritance</label>
+        <label><input type="radio" name="q29" value="b"> b) When you want to define common behavior and state for subclasses</label>
+        <label><input type="radio" name="q29" value="c"> c) When you want to achieve 100% abstraction</label>
+        <label><input type="radio" name="q29" value="d"> d) When you want to avoid method overriding in subclasses</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation29')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation29">
+        <h4>Answer: b) When you want to define common behavior and state for subclasses.</h4>
+        <p>Abstract classes are suitable when you want to share common behavior and state among subclasses while still allowing for some flexibility.</p>
+    </div>
+</div>
+
+<!-- Question 30 -->
+<div class="question">
+    <p>Q30. Which of the following statements is false regarding interfaces in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q30" value="a"> a) Interfaces can have default and static methods.</label>
+        <label><input type="radio" name="q30" value="b"> b) Interfaces can extend other interfaces.</label>
+        <label><input type="radio" name="q30" value="c"> c) Interfaces can contain instance variables.</label>
+        <label><input type="radio" name="q30" value="d"> d) Interfaces cannot have constructors.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation30')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation30">
+        <h4>Answer: c) Interfaces can contain instance variables.</h4>
+        <p>Interfaces cannot contain instance variables; they can only declare constants (static final variables).</p>
+    </div>
+</div>
+<!-- Question 31 -->
+<div class="question">
+    <p>Q31. What is encapsulation in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q31" value="a"> a) Hiding the implementation details of a class.</label>
+        <label><input type="radio" name="q31" value="b"> b) Inheriting properties from a parent class.</label>
+        <label><input type="radio" name="q31" value="c"> c) Creating multiple objects from a class.</label>
+        <label><input type="radio" name="q31" value="d"> d) Providing multiple implementations of the same interface.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation31')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation31">
+        <h4>Answer: a) Hiding the implementation details of a class.</h4>
+        <p>Encapsulation is the concept of bundling data and methods that operate on that data within a single unit (class) and restricting access to the internal state of the object.</p>
+    </div>
+</div>
+
+<!-- Question 32 -->
+<div class="question">
+    <p>Q32. Which of the following is a benefit of using encapsulation?</p>
+    <div class="options">
+        <label><input type="radio" name="q32" value="a"> a) Allows for multiple inheritance.</label>
+        <label><input type="radio" name="q32" value="b"> b) Hides the internal state and requires all interaction to be performed through methods.</label>
+        <label><input type="radio" name="q32" value="c"> c) Reduces code reusability.</label>
+        <label><input type="radio" name="q32" value="d"> d) Makes debugging harder.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation32')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation32">
+        <h4>Answer: b) Hides the internal state and requires all interaction to be performed through methods.</h4>
+        <p>Encapsulation enhances security by restricting access to the internal state and requiring interaction through methods, promoting data integrity.</p>
+    </div>
+</div>
+
+<!-- Question 33 -->
+<div class="question">
+    <p>Q33. What access modifier is commonly used to achieve encapsulation?</p>
+    <div class="options">
+        <label><input type="radio" name="q33" value="a"> a) public</label>
+        <label><input type="radio" name="q33" value="b"> b) protected</label>
+        <label><input type="radio" name="q33" value="c"> c) private</label>
+        <label><input type="radio" name="q33" value="d"> d) default</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation33')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation33">
+        <h4>Answer: c) private</h4>
+        <p>Using the private access modifier for instance variables ensures that they cannot be accessed directly from outside the class, which is key to encapsulation.</p>
+    </div>
+</div>
+
+<!-- Question 34 -->
+<div class="question">
+    <p>Q34. In encapsulation, what are the methods called that allow access to private variables?</p>
+    <div class="options">
+        <label><input type="radio" name="q34" value="a"> a) Public methods</label>
+        <label><input type="radio" name="q34" value="b"> b) Getter and setter methods</label>
+        <label><input type="radio" name="q34" value="c"> c) Constructor methods</label>
+        <label><input type="radio" name="q34" value="d"> d) Static methods</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation34')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation34">
+        <h4>Answer: b) Getter and setter methods</h4>
+        <p>Getter methods are used to retrieve the values of private variables, while setter methods are used to modify them, allowing controlled access.</p>
+    </div>
+</div>
+
+<!-- Question 35 -->
+<div class="question">
+    <p>Q35. Which of the following statements is true regarding encapsulation?</p>
+    <div class="options">
+        <label><input type="radio" name="q35" value="a"> a) Encapsulation prevents data hiding.</label>
+        <label><input type="radio" name="q35" value="b"> b) Encapsulation promotes code reusability.</label>
+        <label><input type="radio" name="q35" value="c"> c) Encapsulation allows direct access to class variables.</label>
+        <label><input type="radio" name="q35" value="d"> d) Encapsulation is not necessary in modern programming.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation35')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation35">
+        <h4>Answer: b) Encapsulation promotes code reusability.</h4>
+        <p>By encapsulating data and methods, classes can be reused across different parts of a program without exposing their internal workings, enhancing modularity.</p>
+    </div>
+</div>
+<!-- Question 36 -->
+<div class="question">
+    <p>Q36. What is the primary purpose of polymorphism in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q36" value="a"> a) To provide multiple implementations for a method.</label>
+        <label><input type="radio" name="q36" value="b"> b) To improve code readability and maintainability.</label>
+        <label><input type="radio" name="q36" value="c"> c) To enhance security by hiding class data.</label>
+        <label><input type="radio" name="q36" value="d"> d) Both a and b.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation36')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation36">
+        <h4>Answer: d) Both a and b.</h4>
+        <p>Polymorphism allows for multiple implementations of a method and enhances code readability and maintainability by enabling a single interface to represent different underlying forms (data types).</p>
+    </div>
+</div>
+
+<!-- Question 37 -->
+<div class="question">
+    <p>Q37. Which type of polymorphism is achieved through method overriding?</p>
+    <div class="options">
+        <label><input type="radio" name="q37" value="a"> a) Compile-time polymorphism.</label>
+        <label><input type="radio" name="q37" value="b"> b) Runtime polymorphism.</label>
+        <label><input type="radio" name="q37" value="c"> c) Static polymorphism.</label>
+        <label><input type="radio" name="q37" value="d"> d) None of the above.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation37')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation37">
+        <h4>Answer: b) Runtime polymorphism.</h4>
+        <p>Runtime polymorphism occurs when a method call is resolved at runtime, typically through method overriding where a subclass provides a specific implementation of a method defined in its parent class.</p>
+    </div>
+</div>
+
+<!-- Question 38 -->
+<div class="question">
+    <p>Q38. Which of the following statements about method overloading is true?</p>
+    <div class="options">
+        <label><input type="radio" name="q38" value="a"> a) It is an example of runtime polymorphism.</label>
+        <label><input type="radio" name="q38" value="b"> b) It occurs when two or more methods in the same class have the same name but different parameters.</label>
+        <label><input type="radio" name="q38" value="c"> c) It requires inheritance.</label>
+        <label><input type="radio" name="q38" value="d"> d) Both b and c.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation38')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation38">
+        <h4>Answer: b) It occurs when two or more methods in the same class have the same name but different parameters.</h4>
+        <p>Method overloading allows methods to have the same name as long as their parameter lists differ, making it a compile-time polymorphism.</p>
+    </div>
+</div>
+
+<!-- Question 39 -->
+<div class="question">
+    <p>Q39. What will be the output of the following code?</p>
+    <pre><code>
+class Animal { 
+    void sound() { 
+        System.out.println("Animal makes sound"); 
+    } 
+} 
+class Dog extends Animal { 
+    void sound() { 
+        System.out.println("Dog barks"); 
+    } 
+} 
+class Main { 
+    public static void main(String[] args) { 
+        Animal a = new Dog(); 
+        a.sound(); 
+    } 
+}
+    </code></pre>
+    <div class="options">
+        <label><input type="radio" name="q39" value="a"> a) Animal makes sound</label>
+        <label><input type="radio" name="q39" value="b"> b) Dog barks</label>
+        <label><input type="radio" name="q39" value="c"> c) Compilation error</label>
+        <label><input type="radio" name="q39" value="d"> d) Runtime error</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation39')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation39">
+        <h4>Answer: b) Dog barks</h4>
+        <p>Because of runtime polymorphism, the method of the subclass (Dog) is called at runtime, resulting in "Dog barks" being printed.</p>
+    </div>
+</div>
+
+<!-- Question 40 -->
+<div class="question">
+    <p>Q40. Which of the following is NOT a benefit of polymorphism in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q40" value="a"> a) Increases code reusability.</label>
+        <label><input type="radio" name="q40" value="b"> b) Makes code easier to understand.</label>
+        <label><input type="radio" name="q40" value="c"> c) Can lead to performance issues.</label>
+        <label><input type="radio" name="q40" value="d"> d) Requires explicit typecasting.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation40')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation40">
+        <h4>Answer: d) Requires explicit typecasting.</h4>
+        <p>Polymorphism itself does not inherently require explicit typecasting; this is typically a design choice, and its main benefits lie in code reusability and maintainability.</p>
+    </div>
+</div>
+
+<!-- Question 41 -->
+<div class="question">
+    <p>Q41. What is a potential drawback of using polymorphism in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q41" value="a"> a) Increased code complexity.</label>
+        <label><input type="radio" name="q41" value="b"> b) Reduced performance due to dynamic method resolution.</label>
+        <label><input type="radio" name="q41" value="c"> c) Limited reusability.</label>
+        <label><input type="radio" name="q41" value="d"> d) Both a and b.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation41')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation41">
+        <h4>Answer: d) Both a and b.</h4>
+        <p>While polymorphism increases reusability, it can also introduce complexity and potential performance overhead due to dynamic method resolution at runtime.</p>
+    </div>
+</div>
+
+<!-- Question 42 -->
+<div class="question">
+    <p>Q42. In Java, which keyword is used to declare a method that can be overridden?</p>
+    <div class="options">
+        <label><input type="radio" name="q42" value="a"> a) static</label>
+        <label><input type="radio" name="q42" value="b"> b) final</label>
+        <label><input type="radio" name="q42" value="c"> c) abstract</label>
+        <label><input type="radio" name="q42" value="d"> d) synchronized</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation42')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation42">
+        <h4>Answer: c) abstract</h4>
+        <p>The `abstract` keyword is used to declare methods in an abstract class that can be overridden by subclasses, allowing for dynamic polymorphism.</p>
+    </div>
+</div>
+
+<!-- Question 43 -->
+<div class="question">
+    <p>Q43. Which of the following is true about method overriding?</p>
+    <div class="options">
+        <label><input type="radio" name="q43" value="a"> a) It can change the return type of the method in the subclass.</label>
+        <label><input type="radio" name="q43" value="b"> b) The overridden method must have the same name and parameters.</label>
+        <label><input type="radio" name="q43" value="c"> c) It cannot be done in the same class.</label>
+        <label><input type="radio" name="q43" value="d"> d) None of the above.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation43')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation43">
+        <h4>Answer: b) The overridden method must have the same name and parameters.</h4>
+        <p>Method overriding occurs when a subclass provides a specific implementation of a method that has the same name and parameters as one in its superclass.</p>
+    </div>
+</div>
+
+<!-- Question 44 -->
+<div class="question">
+    <p>Q44. What is the main purpose of an interface in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q44" value="a"> a) To implement methods</label>
+        <label><input type="radio" name="q44" value="b"> b) To achieve abstraction</label>
+        <label><input type="radio" name="q44" value="c"> c) To create objects</label>
+        <label><input type="radio" name="q44" value="d"> d) To extend classes</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation44')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation44">
+        <h4>Answer: b) To achieve abstraction</h4>
+        <p>An interface is primarily used to achieve abstraction in Java. It allows the specification of methods that must be implemented by any class that chooses to implement the interface, without defining how these methods are executed.</p>
+    </div>
+</div>
+
+<!-- Question 45 -->
+<div class="question">
+    <p>Q45. Which of the following can an interface contain?</p>
+    <div class="options">
+        <label><input type="radio" name="q45" value="a"> a) Concrete methods</label>
+        <label><input type="radio" name="q45" value="b"> b) Instance variables</label>
+        <label><input type="radio" name="q45" value="c"> c) Abstract methods</label>
+        <label><input type="radio" name="q45" value="d"> d) All of the above</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation45')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation45">
+        <h4>Answer: c) Abstract methods</h4>
+        <p>Interfaces can contain abstract methods (methods without a body), but they cannot contain concrete methods or instance variables. Any fields declared in an interface are public, static, and final by default.</p>
+    </div>
+</div>
+
+<!-- Question 46 -->
+<div class="question">
+    <p>Q46. Which keyword is used to implement an interface in a class?</p>
+    <div class="options">
+        <label><input type="radio" name="q46" value="a"> a) extends</label>
+        <label><input type="radio" name="q46" value="b"> b) implements</label>
+        <label><input type="radio" name="q46" value="c"> c) inherits</label>
+        <label><input type="radio" name="q46" value="d"> d) uses</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation46')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation46">
+        <h4>Answer: b) implements</h4>
+        <p>The implements keyword is used when a class implements an interface, indicating that the class will provide the concrete implementations of the abstract methods defined in the interface.</p>
+    </div>
+</div>
+
+<!-- Question 47 -->
+<div class="question">
+    <p>Q47. How many interfaces can a Java class implement?</p>
+    <div class="options">
+        <label><input type="radio" name="q47" value="a"> a) Only one</label>
+        <label><input type="radio" name="q47" value="b"> b) At least two</label>
+        <label><input type="radio" name="q47" value="c"> c) As many as needed</label>
+        <label><input type="radio" name="q47" value="d"> d) None</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation47')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation47">
+        <h4>Answer: c) As many as needed</h4>
+        <p>A Java class can implement multiple interfaces, which allows for a form of multiple inheritance, since Java does not support multiple inheritance through classes.</p>
+    </div>
+</div>
+
+<!-- Question 48 -->
+<div class="question">
+    <p>Q48. Which of the following statements about interfaces is false?</p>
+    <div class="options">
+        <label><input type="radio" name="q48" value="a"> a) Interfaces can extend other interfaces.</label>
+        <label><input type="radio" name="q48" value="b"> b) Interfaces can have constructors.</label>
+        <label><input type="radio" name="q48" value="c"> c) An interface can include static methods from JDK 8 onward.</label>
+        <label><input type="radio" name="q48" value="d"> d) An interface cannot be instantiated.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation48')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation48">
+        <h4>Answer: b) Interfaces can have constructors.</h4>
+        <p>Interfaces cannot have constructors because they cannot be instantiated. They are meant to provide a contract for classes to follow.</p>
+    </div>
+</div>
+
+<!-- Question 49 -->
+<div class="question">
+    <p>Q49. Which of the following is true about default methods in interfaces introduced in JDK 8?</p>
+    <div class="options">
+        <label><input type="radio" name="q49" value="a"> a) They can only be used in abstract classes.</label>
+        <label><input type="radio" name="q49" value="b"> b) They can have a body and can be overridden.</label>
+        <label><input type="radio" name="q49" value="c"> c) They cannot be overridden by implementing classes.</label>
+        <label><input type="radio" name="q49" value="d"> d) They cannot be used in interfaces.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation49')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation49">
+        <h4>Answer: b) They can have a body and can be overridden.</h4>
+        <p>Default methods can have implementations and can be overridden in implementing classes, allowing interfaces to evolve without breaking existing implementations.</p>
+    </div>
+</div>
+
+<!-- Question 50 -->
+<div class="question">
+    <p>Q50. What type of relationship does an interface represent between a class and its behavior?</p>
+    <div class="options">
+        <label><input type="radio" name="q50" value="a"> a) IS-A relationship</label>
+        <label><input type="radio" name="q50" value="b"> b) HAS-A relationship</label>
+        <label><input type="radio" name="q50" value="c"> c) CAN-DO relationship</label>
+        <label><input type="radio" name="q50" value="d"> d) SHOULD-HAVE relationship</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation50')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation50">
+        <h4>Answer: a) IS-A relationship</h4>
+        <p>An interface represents an IS-A relationship. When a class implements an interface, it is said to be a type of that interface, meaning it has the capabilities defined by the interface.</p>
+    </div>
+</div>
+
+<!-- Question 51 -->
+<div class="question">
+    <p>Q51. Which of the following statements is true regarding variables in an interface?</p>
+    <div class="options">
+        <label><input type="radio" name="q51" value="a"> a) They can be non-final and non-static.</label>
+        <label><input type="radio" name="q51" value="b"> b) They are public, static, and final by default.</label>
+        <label><input type="radio" name="q51" value="c"> c) They can be initialized without a value.</label>
+        <label><input type="radio" name="q51" value="d"> d) They can have private access.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation51')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation51">
+        <h4>Answer: b) They are public, static, and final by default.</h4>
+        <p>Any variable declared in an interface is implicitly public, static, and final, meaning it must be initialized when declared and cannot change its value.</p>
+    </div>
+</div>
+
+<!-- Question 52 -->
+<div class="question">
+    <p>Q52. What happens if a class implements two interfaces that contain the same method signature?</p>
+    <div class="options">
+        <label><input type="radio" name="q52" value="a"> a) Compilation error occurs.</label>
+        <label><input type="radio" name="q52" value="b"> b) The class must provide its own implementation of the method.</label>
+        <label><input type="radio" name="q52" value="c"> c) The class can ignore the method.</label>
+        <label><input type="radio" name="q52" value="d"> d) The class inherits the implementation from one of the interfaces.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation52')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation52">
+        <h4>Answer: b) The class must provide its own implementation of the method.</h4>
+        <p>When a class implements two interfaces with the same method signature, it must provide its own implementation for that method to avoid ambiguity.</p>
+    </div>
+</div>
+
+<!-- Question 53 -->
+<div class="question">
+    <p>Q53. What is the main advantage of using interfaces in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q53" value="a"> a) They allow multiple inheritance.</label>
+        <label><input type="radio" name="q53" value="b"> b) They reduce code duplication.</label>
+        <label><input type="radio" name="q53" value="c"> c) They allow for loose coupling.</label>
+        <label><input type="radio" name="q53" value="d"> d) They increase execution speed.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation53')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation53">
+        <h4>Answer: c) They allow for loose coupling.</h4>
+        <p>Interfaces promote loose coupling between classes. They define a contract without dictating how the contract should be fulfilled, allowing for flexibility in implementation.</p>
+    </div>
+</div>
+
+<!-- Question 54 -->
+<div class="question">
+    <p>Q54. What can be used to achieve polymorphism in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q54" value="a"> a) Method overloading</label>
+        <label><input type="radio" name="q54" value="b"> b) Method overriding</label>
+        <label><input type="radio" name="q54" value="c"> c) Interfaces</label>
+        <label><input type="radio" name="q54" value="d"> d) All of the above</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation54')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation54">
+        <h4>Answer: d) All of the above</h4>
+        <p>Polymorphism in Java can be achieved through method overloading, method overriding, and using interfaces, allowing objects to be treated as instances of their parent class or interface.</p>
+    </div>
+</div>
+
+<!-- Question 55 -->
+<div class="question">
+    <p>Q55. In which scenario would you prefer to use an interface over an abstract class?</p>
+    <div class="options">
+        <label><input type="radio" name="q55" value="a"> a) When you want to provide default behavior.</label>
+        <label><input type="radio" name="q55" value="b"> b) When you want to restrict the class hierarchy.</label>
+        <label><input type="radio" name="q55" value="c"> c) When multiple classes need to implement the same set of methods.</label>
+        <label><input type="radio" name="q55" value="d"> d) When you want to inherit behavior from a single base class.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation55')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation55">
+        <h4>Answer: c) When multiple classes need to implement the same set of methods.</h4>
+        <p>Using an interface is ideal when multiple classes need to implement the same methods, allowing for more flexible designs and promoting loose coupling.</p>
+    </div>
+</div>
+
+<!-- Question 56 -->
+<div class="question">
+    <p>Q56. What is a functional interface in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q56" value="a"> a) An interface with no methods</label>
+        <label><input type="radio" name="q56" value="b"> b) An interface with one abstract method</label>
+        <label><input type="radio" name="q56" value="c"> c) An interface that can have multiple default methods</label>
+        <label><input type="radio" name="q56" value="d"> d) An interface that is final</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation56')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation56">
+        <h4>Answer: b) An interface with one abstract method</h4>
+        <p>A functional interface is an interface that contains exactly one abstract method. They can have multiple default or static methods but only one abstract method.</p>
+    </div>
+</div>
+
+<!-- Question 57 -->
+<div class="question">
+    <p>Q57. Which annotation is used to indicate a functional interface in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q57" value="a"> a) @Function</label>
+        <label><input type="radio" name="q57" value="b"> b) @FunctionalInterface</label>
+        <label><input type="radio" name="q57" value="c"> c) @Interface</label>
+        <label><input type="radio" name="q57" value="d"> d) @AbstractInterface</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation57')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation57">
+        <h4>Answer: b) @FunctionalInterface</h4>
+        <p>The @FunctionalInterface annotation is used to indicate that an interface is a functional interface, which helps the compiler to enforce the rule that the interface must have only one abstract method.</p>
+    </div>
+</div>
+
+<!-- Question 58 -->
+<div class="question">
+    <p>Q58. Can an interface extend another interface?</p>
+    <div class="options">
+        <label><input type="radio" name="q58" value="a"> a) Yes</label>
+        <label><input type="radio" name="q58" value="b"> b) No</label>
+        <label><input type="radio" name="q58" value="c"> c) Only if it is a functional interface</label>
+        <label><input type="radio" name="q58" value="d"> d) Only if it has default methods</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation58')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation58">
+        <h4>Answer: a) Yes</h4>
+        <p>An interface can extend another interface, allowing it to inherit abstract methods and constants defined in the parent interface.</p>
+    </div>
+</div>
+
+<!-- Question 59 -->
+<div class="question">
+    <p>Q59. What is the default visibility of an interface in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q59" value="a"> a) public</label>
+        <label><input type="radio" name="q59" value="b"> b) protected</label>
+        <label><input type="radio" name="q59" value="c"> c) private</label>
+        <label><input type="radio" name="q59" value="d"> d) package-private</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation59')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation59">
+        <h4>Answer: d) package-private</h4>
+        <p>If no access modifier is specified for an interface, it has package-private visibility, meaning it is accessible only within its own package.</p>
+    </div>
+</div>
+
+<!-- Question 60 -->
+<div class="question">
+    <p>Q60. Which of the following is a valid reason to use an abstract class over an interface?</p>
+    <div class="options">
+        <label><input type="radio" name="q60" value="a"> a) You want to provide a common base for subclasses to share code.</label>
+        <label><input type="radio" name="q60" value="b"> b) You want to enforce a contract.</label>
+        <label><input type="radio" name="q60" value="c"> c) You want to allow multiple inheritance.</label>
+        <label><input type="radio" name="q60" value="d"> d) You want to provide default implementations for all methods.</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation60')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation60">
+        <h4>Answer: a) You want to provide a common base for subclasses to share code.</h4>
+        <p>Abstract classes are useful when you want to provide a common base for subclasses to share code while still allowing for method implementations that can vary across subclasses.</p>
+    </div>
+</div>
+<!-- Question 61 -->
+<div class="question">
+    <p>Q61. When should you use the @Override annotation in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q61" value="a"> a) When overriding a method from a superclass</label>
+        <label><input type="radio" name="q61" value="b"> b) When creating an interface</label>
+        <label><input type="radio" name="q61" value="c"> c) When implementing an interface</label>
+        <label><input type="radio" name="q61" value="d"> d) When defining a new method</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation61')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation61">
+        <h4>Answer: a) When overriding a method from a superclass</h4>
+        <p>The @Override annotation should be used when a method is overriding a method declared in a superclass. It helps ensure that you are correctly overriding a method and provides compile-time checking.</p>
+    </div>
+</div>
+
+<!-- Question 62 -->
+<div class="question">
+    <p>Q62. What will happen if you do not use the @Override annotation when overriding a method?</p>
+    <div class="options">
+        <label><input type="radio" name="q62" value="a"> a) The code will not compile</label>
+        <label><input type="radio" name="q62" value="b"> b) The method will not override the superclass method</label>
+        <label><input type="radio" name="q62" value="c"> c) It will throw a runtime exception</label>
+        <label><input type="radio" name="q62" value="d"> d) It will be ignored by the compiler</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation62')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation62">
+        <h4>Answer: b) The method will not override the superclass method</h4>
+        <p>If you do not use the @Override annotation and accidentally change the method signature, it will not override the superclass method, leading to potential logical errors in your code.</p>
+    </div>
+</div>
+
+
+<!-- Question 63 -->
+<div class="question">
+    <p>Q63. How does the <code>this</code> keyword help to differentiate between local and instance variables within a class? Provide an example.</p>
+    <div class="options">
+        <label><input type="radio" name="q63" value="a"> a) By declaring local variables as static</label>
+        <label><input type="radio" name="q63" value="b"> b) By using the <code>this</code> keyword to access instance variables</label>
+        <label><input type="radio" name="q63" value="c"> c) By renaming local variables</label>
+        <label><input type="radio" name="q63" value="d"> d) By making instance variables private</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation63')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation63">
+        <h4>Answer: b) By using the <code>this</code> keyword to access instance variables</h4>
+        <p>The <code>this</code> keyword allows access to instance variables when local variables have the same name. For example:</p>
+        <pre><code>class Example { int a; // Instance variable
+Example(int a) { // Constructor parameter
+    this.a = a; // 'this.a' refers to the instance variable
+}
+}</code></pre>
+        <p>In this code, <code>this.a</code> differentiates the instance variable <code>a</code> from the parameter <code>a</code> of the constructor.</p>
+    </div>
+</div>
+
+<!-- Question 64 -->
+<div class="question">
+    <p>Q64. In the context of constructors, how is <code>this()</code> used to invoke another constructor within the same class? Explain with a code example.</p>
+    <div class="options">
+        <label><input type="radio" name="q64" value="a"> a) To call static methods</label>
+        <label><input type="radio" name="q64" value="b"> b) To initialize instance variables</label>
+        <label><input type="radio" name="q64" value="c"> c) To invoke another constructor</label>
+        <label><input type="radio" name="q64" value="d"> d) To create an abstract method</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation64')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation64">
+        <h4>Answer: c) To invoke another constructor</h4>
+        <p>The <code>this()</code> keyword is used to invoke another constructor in the same class, allowing for constructor chaining. For example:</p>
+        <pre><code>class Test { int a, b;
+Test() {
+    this(10, 20); // Calls the parameterized constructor
+}
+
+Test(int a, int b) {
+    this.a = a;
+    this.b = b;
+}
+}</code></pre>
+        <p>In this example, the default constructor uses <code>this(10, 20)</code> to call the parameterized constructor, initializing the instance variables.</p>
+    </div>
+</div>
+
+<!-- Question 65 -->
+<div class="question">
+    <p>Q65. What are the advantages of using the <code>this</code> reference in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q65" value="a"> a) It can make code longer</label>
+        <label><input type="radio" name="q65" value="b"> b) It distinguishes between local and instance variables</label>
+        <label><input type="radio" name="q65" value="c"> c) It prevents method overriding</label>
+        <label><input type="radio" name="q65" value="d"> d) It makes methods private</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation65')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation65">
+        <h4>Answer: b) It distinguishes between local and instance variables</h4>
+        <p>One advantage of using <code>this</code> is that it helps differentiate between local and instance variables when they have the same names. Another advantage is that it allows passing the current object as a parameter to methods or returning it from a method. However, overusing <code>this</code> can make the code harder to read.</p>
+    </div>
+</div>
+
+<!-- Question 66 -->
+<div class="question">
+    <p>Q66. What is a disadvantage of using the <code>this</code> keyword in Java?</p>
+    <div class="options">
+        <label><input type="radio" name="q66" value="a"> a) It can help in dynamic method dispatch</label>
+        <label><input type="radio" name="q66" value="b"> b) It can lead to confusion in static contexts</label>
+        <label><input type="radio" name="q66" value="c"> c) It allows for method overloading</label>
+        <label><input type="radio" name="q66" value="d"> d) It can improve code readability</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation66')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation66">
+        <h4>Answer: b) It can lead to confusion in static contexts</h4>
+        <p>One disadvantage of using <code>this</code> is that it cannot be used in static contexts, which can lead to compile-time errors if attempted. Additionally, excessive use of <code>this</code> can clutter the code and make it less readable, as it may not always be necessary.</p>
+    </div>
+</div>
+
+<!-- Question 67 -->
+<div class="question">
+    <p>Q67. In the provided examples, how is the <code>this</code> keyword utilized to return the current class instance from a method? Explain with an example.</p>
+    <div class="options">
+        <label><input type="radio" name="q67" value="a"> a) By returning a new instance of the class</label>
+        <label><input type="radio" name="q67" value="b"> b) By using the new keyword</label>
+        <label><input type="radio" name="q67" value="c"> c) By using <code>this</code> to refer to the current instance</label>
+        <label><input type="radio" name="q67" value="d"> d) By creating an interface</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation67')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation67">
+        <h4>Answer: c) By using <code>this</code> to refer to the current instance</h4>
+        <p>The <code>this</code> keyword can be used to return the current class instance from a method. For example:</p>
+        <pre><code>class Test { int a, b;
+Test() {
+    a = 10;
+    b = 20;
+}
+
+Test get() { return this; } // Returns the current instance
+
+void display() {
+    System.out.println("a = " + a + ", b = " + b);
+}
+}
+
+public class Main { public static void main(String[] args) { Test obj = new Test(); obj.get().display(); // Calls display on the returned instance } }</code></pre>
+        <p>In this example, the <code>get()</code> method returns the current instance, allowing <code>display()</code> to be called on it.</p>
+    </div>
+</div>
+
+<!-- Question 62 -->
+<div class="question">
+    <p>Q68. What is the purpose of the <code>this</code> keyword in Java, and how does it improve code readability?</p>
+    <div class="options">
+        <label><input type="radio" name="q62" value="a"> a) To create a new instance of a class</label>
+        <label><input type="radio" name="q62" value="b"> b) To refer to the current object instance</label>
+        <label><input type="radio" name="q62" value="c"> c) To call static methods</label>
+        <label><input type="radio" name="q62" value="d"> d) To create an interface</label>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleExplanation('explanation62')">Show Explanation</button>
+    </div>
+    <div class="explanation" id="explanation62">
+        <h4>Answer: b) To refer to the current object instance</h4>
+        <p>The <code>this</code> keyword in Java is used to refer to the current object instance. It helps improve code readability by making it clear which variables and methods belong to the current object, especially when local variables have the same names as instance variables. This distinction makes the code easier to understand and maintain.</p>
+    </div>
+</div>
+
+
+
+
+</div>
+
+<script>
+    function toggleExplanation(id) {
+        var explanation = document.getElementById(id);
+        if (explanation.style.display === "block") {
+            explanation.style.display = "none";
+        } else {
+            explanation.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
