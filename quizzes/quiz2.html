@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python OOP Quiz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .options label {
+            display: block;
+            padding: 10px;
+            background-color: #fafafa;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+
+        .options label:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dropdown button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dropdown button:hover {
+            background-color: #218838;
+        }
+
+        .explanation {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #28a745;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleExplanation(id) {
+            const explanation = document.getElementById(id);
+            explanation.style.display = explanation.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h2>Python OOP Quiz: Test Your Knowledge</h2>
+
+    <!-- Question 1 -->
+    <div class="question">
+        <p>Q1. What does the <code>__init__</code> method do in Python?</p>
+        <div class="options">
+            <label><input type="radio" name="q1" value="a"> a) Deletes an object.</label>
+            <label><input type="radio" name="q1" value="b"> b) Initializes a class instance.</label>
+            <label><input type="radio" name="q1" value="c"> c) Creates a private method.</label>
+            <label><input type="radio" name="q1" value="d"> d) Checks for class inheritance.</label>
+        </div>
+        <div class="dropdown">
+            <button onclick="toggleExplanation('explanation1')">Show Explanation</button>
+        </div>
+        <div class="explanation" id="explanation1">
+            <h4>Answer: b) Initializes a class instance.</h4>
+            <p>The <code>__init__</code> method in Python is a constructor used to initialize an instance of a class when it is created.</p>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <p>Q2. Which of the following is NOT a feature of Object-Oriented Programming in Python?</p>
+        <div class="options">
+            <label><input type="radio" name="q2" value="a"> a) Encapsulation</label>
+            <label><input type="radio" name="q2" value="b"> b) Polymorphism</label>
+            <label><input type="radio" name="q2" value="c"> c) Inheritance</label>
+            <label><input type="radio" name="q2" value="d"> d) Compilation</label>
+        </div>
+        <div class="dropdown">
+            <button onclick="toggleExplanation('explanation2')">Show Explanation</button>
+        </div>
+        <div class="explanation" id="explanation2">
+            <h4>Answer: d) Compilation</h4>
+            <p>Python is an interpreted language, and compilation is not a feature of its OOP design.</p>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+        <p>Q3. What is the purpose of the <code>super()</code> function in Python?</p>
+        <div class="options">
+            <label><input type="radio" name="q3" value="a"> a) To access the parent class constructor or methods.</label>
+            <label><input type="radio" name="q3" value="b"> b) To create a new class dynamically.</label>
+            <label><input type="radio" name="q3" value="c"> c) To delete inherited properties.</label>
+            <label><input type="radio" name="q3" value="d"> d) To check instance type.</label>
+        </div>
+        <div class="dropdown">
+            <button onclick="toggleExplanation('explanation3')">Show Explanation</button>
+        </div>
+        <div class="explanation" id="explanation3">
+            <h4>Answer: a) To access the parent class constructor or methods.</h4>
+            <p>The <code>super()</code> function is used to call a parent class's methods or constructor in Python.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
